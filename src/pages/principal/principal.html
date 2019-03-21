@@ -1,0 +1,38 @@
+<!--
+  Generated template for the PrincipalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Principal</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-avatar class = "avatar">
+        <img src = "./assets/imgs/mat.png" >
+     </ion-avatar>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Numero 1</ion-label>
+      <ion-input type="text" [(ngModel)]="num1" ></ion-input>
+    </ion-item> 
+  
+    <ion-item>
+      <ion-label floating>Numero 2</ion-label>
+      <ion-input type="text" [(ngModel)]="num2"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <button ion-button color= "test" full icon-start (click)="somar()">
+    <ion-icon name="home"></ion-icon>
+      Somar
+    </button>
+
+</ion-content>

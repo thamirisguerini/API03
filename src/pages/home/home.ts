@@ -1,3 +1,4 @@
+import { PrincipalPage } from './../principal/principal';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
@@ -7,8 +8,14 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController) {}
 
+   openPrincipal(){
+     this.navCtrl.push(PrincipalPage);
   }
+
+  /*openPrincipal(){
+    this.navCtrl.setRoot(PrincipalPage);
+  }*/
 
 }

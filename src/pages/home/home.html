@@ -8,11 +8,9 @@
 
 <ion-content padding>
     
-  <div align="center">
-     <ion-avatar>
-        <img src = "https://cdn.iconscout.com/icon/free/png-256/avatar-375-456327.png" >
+     <ion-avatar class = "avatar">
+        <img src = "./assets/imgs/teste.png" >
      </ion-avatar>
-  </div>
 
   <ion-list>
 
@@ -28,8 +26,8 @@
   
   </ion-list>
 
-  <button ion-button color= "test" icon-start full>
-      <ion-icon name="home"></ion-icon>
+  <button ion-button color= "test" full icon-start (click)="openPrincipal()">
+    <ion-icon name="home"></ion-icon>
       Default
     </button>
 
